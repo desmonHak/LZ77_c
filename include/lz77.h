@@ -109,7 +109,7 @@ static LZ77Params default_params = {
 /**
  * @brief Estructura que define los parámetros derivados calculados a partir de los parámetros de configuración de LZ77Params.
  */
-typedef struct {
+typedef struct DerivedParams {
     unsigned int max_coincidencia;
     unsigned int tam_diccionario;
     unsigned int tam_hash;

@@ -14,3 +14,4 @@ error_log.txt
 *.gcda
 doc/html/*
 examples/entrada.txt
+cmake-build-*

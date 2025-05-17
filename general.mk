@@ -12,11 +12,11 @@ lz77.o: $(PATH_SRC)/lz77.c
 	$(CC) $(CFLAGS) -c $^ -o $@
 
 cleanobj:
-	$(RM) $(RMFLAGS) $(OBJECTS)
+	$(RM) $(RMFLAGS) *.o
 
 cleanall: cleanobj
-	$(RM) $(RMFLAGS) $(TARGET).o $(TARGET).a \
-	$(TARGET_DEBUG).a
+	$(RM) $(RMFLAGS) *.o *.a \
+	$(TARGET_DEBUG).a *.$(EXTENSION) 
 
 .SILENT: clean cleanobj cleanall
 .IGNORE: cleanobj cleanall
